@@ -7,7 +7,7 @@
 // import phenix from '../../dist/channels/min/channels';
 // import phenix from '../../src/sdk/channels';
 
-console.log('NIKNIK branch: zero-invalid-frame');
+console.log('NIKNIK branch: trigger-only');
 
 // ------------------------------------------------------------
 const button = document.getElementById('triggerPli');
@@ -17,16 +17,6 @@ let triggerPli = false;
 button.addEventListener('click', () => {
   triggerPli = true;
 });
-
-setInterval(() => {
-  triggerPli = !triggerPli;
-
-  if (triggerPli) {
-    status.innerHTML = 'status: PLIs for each frame';
-  } else {
-    status.innerHTML = 'status: GOOD';
-  }
-}, 15000);
 
 // ------------------------------------------------------------
 const timeStart = Date.now();
@@ -63,8 +53,6 @@ let XXX_DELTA;
 // ------------------------------------------------------------
 function processVideo(track, frame) {
   if (triggerPli) {
-    // X triggerPli = false;
-
     return false;
   }
 
