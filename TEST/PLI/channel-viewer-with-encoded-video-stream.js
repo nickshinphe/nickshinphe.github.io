@@ -7,6 +7,8 @@
 // import phenix from '../../dist/channels/min/channels';
 // import phenix from '../../src/sdk/channels';
 
+console.log('NIKNIK branch: zero-invalid-frame');
+
 // ------------------------------------------------------------
 const button = document.getElementById('triggerPli');
 const status = document.getElementById('PliStatus');
