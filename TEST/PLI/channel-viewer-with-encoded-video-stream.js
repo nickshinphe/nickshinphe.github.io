@@ -53,6 +53,9 @@ let XXX_DELTA;
 // ------------------------------------------------------------
 function processVideo(track, frame) {
   if (triggerPli) {
+    console.log('NIKNIK triggerPli tripped -- resetting and returning false...')
+    triggerPli = false;
+
     return false;
   }
 
