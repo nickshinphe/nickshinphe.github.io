@@ -7,7 +7,7 @@
 // import phenix from '../../dist/channels/min/channels';
 // import phenix from '../../src/sdk/channels';
 
-console.log('NIKNIK branch: null-invalid-frame')
+console.log('NIKNIK branch: fumky-invalid-frame 00')
 
 // ------------------------------------------------------------
 const button = document.getElementById('triggerPli');
