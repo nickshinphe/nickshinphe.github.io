@@ -7,7 +7,7 @@
 // import phenix from '../../dist/channels/min/channels';
 // import phenix from '../../src/sdk/channels';
 
-console.log('NIKNIK branch: fumky-invalid-frame 00')
+console.log('NIKNIK branch: fumky-invalid-frame 01 - filled with 2x2 h264');
 
 // ------------------------------------------------------------
 const button = document.getElementById('triggerPli');
