@@ -7,6 +7,8 @@
 // import phenix from '../../dist/channels/min/channels';
 // import phenix from '../../src/sdk/channels';
 
+console.log('NIKNIK: base case - build 0');
+
 // ------------------------------------------------------------
 const button = document.getElementById('triggerPli');
 const status = document.getElementById('PliStatus');
