@@ -13,7 +13,6 @@ console.log('NIKNIK: android H264 - build 1b');
 const button = document.getElementById('triggerPli');
 const status = document.getElementById('PliStatus');
 let triggerPli = false;
-let toggleCounter = 0;
 
 button.addEventListener('click', () => {
   triggerPli = true;
@@ -24,7 +23,6 @@ setInterval(() => {
 
   if (triggerPli) {
     status.innerHTML = 'status: PLIs for each frame';
-    toggleCounter = 0;
   } else {
     status.innerHTML = 'status: GOOD';
   }
@@ -66,11 +64,6 @@ let XXX_DELTA;
 function processVideo(track, frame) {
   if (triggerPli) {
     // X triggerPli = false;
-
-    toggleCounter++;
-    if (toggleCounter % 2) {
-      return true;
-    }
 
     return false;
   }
