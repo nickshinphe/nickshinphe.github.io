@@ -7,7 +7,7 @@
 // import phenix from '../../dist/channels/min/channels';
 // import phenix from '../../src/sdk/channels';
 
-console.log('NIKNIK: android H264 - build 1b');
+console.log('NIKNIK: android H264 - build 1a');
 
 // ------------------------------------------------------------
 const button = document.getElementById('triggerPli');
