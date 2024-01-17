@@ -7,7 +7,7 @@
 // import phenix from '../../dist/channels/min/channels';
 // import phenix from '../../src/sdk/channels';
 
-console.log('NIKNIK: android H264 - build 6a5 - original valid, trunc invalid, intervals @ 5secs - all platforms');
+console.log('NIKNIK: android H264 - build 6a6 - original valid, trunc (50% of original) invalid, intervals @ 5secs');
 
 // ------------------------------------------------------------
 const status = document.getElementById('PliStatus');
