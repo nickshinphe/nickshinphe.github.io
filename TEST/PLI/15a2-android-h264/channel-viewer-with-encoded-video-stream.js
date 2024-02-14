@@ -27,7 +27,7 @@ setInterval(() => {
 function processVideo(track, frame) {
   if (triggerPli) {
 //    triggerPli = false;
-    status.innerHTML = 'status: GOOD';
+//    status.innerHTML = 'status: GOOD';
 
     return false;
   }
