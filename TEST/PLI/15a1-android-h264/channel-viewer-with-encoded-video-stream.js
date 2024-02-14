@@ -7,32 +7,33 @@
 // import phenix from '../../dist/channels/min/channels';
 // import phenix from '../../src/sdk/channels';
 
-console.log('NIKNIK: android H264 - build 15a1 - 2x2 valid, 0x00 ac:2x2 1KF drop - mk1');
+console.log('NIKNIK: android H264 - build 15a1 - 2x2 valid, 0x00 ac:2x2 1KF drop, triggered - mk2');
 
 // ------------------------------------------------------------
+const button = document.getElementById('triggerPli');
 const status = document.getElementById('PliStatus');
 let triggerPli = false;
 
+button.addEventListener('click', () => {
+  triggerPli = true;
+  status.innerHTML = 'status: PLIs for each frame';
+});
+
 // setInterval(() => {
 //   triggerPli = !triggerPli;
-//   status.innerHTML = 'status: PLIs for each frame';
-//   console.log('NIKNIK: STATUS: PLIS FOR EACH FRAME');
-// }, 5000);
-setInterval(() => {
-  triggerPli = !triggerPli;
-
-  if (triggerPli) {
-    status.innerHTML = 'status: PLIs for each frame';
-  } else {
-    status.innerHTML = 'status: GOOD';
-  }
-}, 15000);
+// 
+//   if (triggerPli) {
+//     status.innerHTML = 'status: PLIs for each frame';
+//   } else {
+//     status.innerHTML = 'status: GOOD';
+//   }
+// }, 15000);
 
 // ------------------------------------------------------------
 function processVideo(track, frame) {
   if (triggerPli) {
-    // triggerPli = false;
-    // status.innerHTML = 'status: GOOD';
+    triggerPli = false;
+    status.innerHTML = 'status: GOOD';
 
     return false;
   }
