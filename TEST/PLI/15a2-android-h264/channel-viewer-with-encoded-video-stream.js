@@ -7,7 +7,7 @@
 // import phenix from '../../dist/channels/min/channels';
 // import phenix from '../../src/sdk/channels';
 
-console.log('NIKNIK: android H264 - build 15a2 - 2x2 valid, 0x00 ac:2x2 1KF drop, interval - mk2');
+console.log('NIKNIK: android H264 - build 15a2 - 2x2 valid, 0x00 ac:2x2 1KF drop, interval - mk3');
 
 // ------------------------------------------------------------
 const status = document.getElementById('PliStatus');
@@ -31,7 +31,7 @@ setInterval(() => {
 // ------------------------------------------------------------
 function processVideo(track, frame) {
   if (triggerPli) {
-    triggerPli = false;
+//    triggerPli = false;
     status.innerHTML = 'status: GOOD';
 
     return false;
