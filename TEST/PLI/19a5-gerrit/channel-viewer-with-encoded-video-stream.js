@@ -7,13 +7,8 @@
 // import phenix from '../../dist/channels/min/channels';
 // import phenix from '../../src/sdk/channels';
 
-<<<<<<< Updated upstream
-const version = '19a4';
-console.log(`NIKNIK: gerrit - build ${version} - FSDv5 - interval - mk2`);
-=======
 const version = '19a5';
 console.log(`NIKNIK: gerrit - build ${version} - FSDv5 - interval - mk3`);
->>>>>>> Stashed changes
 
 // ------------------------------------------------------------
 const status = document.getElementById('PliStatus');
