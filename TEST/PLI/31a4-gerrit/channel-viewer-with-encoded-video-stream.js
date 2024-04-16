@@ -8,7 +8,7 @@
 // import phenix from '../../src/sdk/channels';
 
 const version = '31a4';
-console.log(`NIKNIK: gerrit - build ${version} - PS32 - interval - mk1`);
+console.log(`NIKNIK: gerrit - build ${version} - PS32 - interval - mk2`);
 
 // ------------------------------------------------------------
 const status = document.getElementById('PliStatus');
@@ -27,15 +27,15 @@ setInterval(() => {
 
 // ------------------------------------------------------------
 function processVideo(track, frame) {
+  if (triggerPli) {
+    return false;
+  }
+
   return true;
 }
 
 // ------------------------------------------------------------
 function processAudio(track, frame) {
-  if (triggerPli) {
-    return false;
-  }
-
   return true;
 }
 
