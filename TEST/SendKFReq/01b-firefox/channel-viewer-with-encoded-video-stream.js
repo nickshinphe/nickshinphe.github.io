@@ -8,7 +8,7 @@
 // import phenix from '../../src/sdk/channels';
 
 const version = '10c1b';
-console.log(`NIKNIK: sendKFreq - build ${version} - interval - mk1`);
+console.log(`NIKNIK: sendKFreq - build ${version} - interval - mk2`);
 
 // ------------------------------------------------------------
 const status = document.getElementById('PliStatus');
@@ -27,6 +27,8 @@ setInterval(() => {
 
 // ------------------------------------------------------------
 function processVideo(track, frame) {
+  console.log('NIKNIK: TEST CODE process VIDEO ...');
+
   if (triggerPli) {
     return false;
   }
@@ -36,6 +38,8 @@ function processVideo(track, frame) {
 
 // ------------------------------------------------------------
 function processAudio(track, frame) {
+  console.log('NIKNIK: TEST CODE process AUDIO ...');
+
   return true;
 }
 
