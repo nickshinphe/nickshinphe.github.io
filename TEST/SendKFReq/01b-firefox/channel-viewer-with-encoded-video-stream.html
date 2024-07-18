@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Optional: Initialize environment based on URL parameter `token` -->
+        <meta name="phenix-channel-token-uri-parameter-name" value="token"/>
+        <script>
+          __phenixPageLoadTime = new Date().getTime();
+        </script>
+<!--
+        <script src="https://dl.phenixrts.com/JsSDK/2023.2.latest/channels/min/channels.js"></script>
+-->
+        <script src="channels.js"></script>
+    </head>
+    <body style="margin: 0">
+        <button id='triggerPli' type="button">Trigger a PLI</button>
+        <span id='PliStatus'>status: GOOD</span>
+        <video style="width: 100vw; height: calc(100vh - 50px)" controls muted autoplay playsinline></video>
+        <script src="./channel-viewer-with-encoded-video-stream.js"></script>
+    </body>
+</html>
