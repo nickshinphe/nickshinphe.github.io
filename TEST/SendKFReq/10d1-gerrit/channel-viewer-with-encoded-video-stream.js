@@ -7,8 +7,8 @@
 // import phenix from '../../dist/channels/min/channels';
 // import phenix from '../../src/sdk/channels';
 
-const version = '10d1';
-console.log(`NIKNIK: sendKFreq - build ${version} - interval - mk2`);
+const version = '10d1 - gerrit';
+console.log(`NIKNIK: sendKFreq - build ${version} - interval - mk3`);
 
 // ------------------------------------------------------------
 const status = document.getElementById('PliStatus');

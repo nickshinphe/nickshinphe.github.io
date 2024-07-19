@@ -7,7 +7,7 @@
 // import phenix from '../../dist/channels/min/channels';
 // import phenix from '../../src/sdk/channels';
 
-const version = '10c1b';
+const version = '10c1c';
 console.log(`NIKNIK: sendKFreq - build ${version} - interval - mk2`);
 
 // ------------------------------------------------------------
