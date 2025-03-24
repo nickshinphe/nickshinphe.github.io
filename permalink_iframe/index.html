@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Channel</title>
+  </head>
+  <body>
+    perma link: (right click open in new tab to see permalink in action)<br>
+    <ul>
+      <a href="https://pcast.phenixrts.com/channel/?token=DIGEST:...">https://pcast.phenixrts.com/channel/?token=DIGEST:...</a>
+    </ul>
+    <p>
+      I FRAME example:<br>
+      <iframe src='channel-viewer-plain.html?token=DIGEST:...'></iframe>
+    <p>
+    </p>
+    <p>
+      (right click and view source code) to see how plain the code is for this page...
+    </p>
+  </body>
+  <script>
+  // the rest of this file is just bootstrapping the "token" value to the permalink and iframe
+  const token = new URLSearchParams(document.location.search).get("token")
+  if (token.startsWith('DIGEST:')) {
+    const el_ahref=document.getElementsByTagName("a")[0];
+    el_ahref.href=`https://pcast.phenixrts.com/channel/?token=${token}`;
+    el_ahref.innerHTML=`https://pcast.phenixrts.com/channel/?token=${token}`;
+
+    const path = document.location.pathname;
+    const basepath = path.substring(0, path.lastIndexOf('/'));
+    const el_iframe=document.getElementsByTagName("iframe")[0];
+    el_iframe.src=`${basepath}/channel-viewer-plain.html?token=${token}`;
+  }
+  </script>
+</html>
